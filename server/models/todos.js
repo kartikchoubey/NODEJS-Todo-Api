@@ -15,6 +15,11 @@ var mongoose =require('mongoose');
      completedAt:{
          type : Number,
         default:null
+     },
+     _creator:{
+         type:mongoose.Schema.Types.ObjectId,
+         required:true
+
      }
  });
 
